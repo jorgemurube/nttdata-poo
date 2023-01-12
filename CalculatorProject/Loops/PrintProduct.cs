@@ -37,6 +37,9 @@ namespace CalculatorProject.Loops
                     Price = 39.99f
                 };
                 listaProductos.Add(game);
+
+                var shoes = new Product(3, "Zapatos", 20.99f);
+
             }
                 
             
@@ -72,20 +75,17 @@ namespace CalculatorProject.Loops
             return ListaProductosFiltrados;
         }
 
-        public static List<Product> GetProductsGreatterthan30WithWhile()
+       /* public static List<Product> GetProductsGreatterthan30WithWhile()
         {
             var ListaProductosFiltrados = new List<Product>();
 
-            for (int i = 0; i < listaProductos.Count; i++)
-            {
-                while (listaProductos[i].Price > 30)
+                while (listaProductos.Price > 30.00f)
                 {
-
                     ListaProductosFiltrados.Add(listaProductos[i]);
                 }
-            }
+            
             return ListaProductosFiltrados;
-        }
+        }*/
 
         public static List<Product> GetProductsGreatterthan30WithLinq()
         {
