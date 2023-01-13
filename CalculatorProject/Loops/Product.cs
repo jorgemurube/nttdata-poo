@@ -18,10 +18,10 @@ namespace CalculatorProject.Loops
             Guid= Guid.NewGuid();
         }
         
-        public Product(int Id, String name, float Price)
+        public Product(int Id, String Name, float Price)
         {
             this.Id = Id;
-            this.Name = name;
+            this.Name = Name;
             this.Price = Price;
             Guid = Guid.NewGuid();
         }

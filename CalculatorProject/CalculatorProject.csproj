@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>CalculatorProject.PlanDePensiones.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -44,13 +47,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Calculator.cs" />
+    <Compile Include="Inheritance\Address.cs" />
+    <Compile Include="Inheritance\NttDataBase.cs" />
+    <Compile Include="Inheritance\PrintStudents.cs" />
+    <Compile Include="Inheritance\Student.cs" />
     <Compile Include="Loops\PrintProduct.cs" />
     <Compile Include="Loops\Product.cs" />
+    <Compile Include="PlanDePensiones\Calcular.cs" />
+    <Compile Include="PlanDePensiones\Model.cs" />
+    <Compile Include="PlanDePensiones\Print.cs" />
+    <Compile Include="PlanDePensiones\Program.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
