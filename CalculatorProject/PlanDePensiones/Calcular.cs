@@ -15,7 +15,7 @@ namespace CalculatorProject.PlanDePensiones
             var desgravacion=0.00f;
             if (model.BaseImponible>=0 && model.BaseImponible <= 12449)
             {
-                desgravacion = (model.AportacionEmpresaPlanPensiones + model.BaseImponible) * 0.81f;
+                desgravacion = (model.AportacionPersonaFisicaPlanPensiones + model.AportacionEmpresaPlanPensiones) * 0.81f;
   
             }
             else if(model.BaseImponible >= 12500 && model.BaseImponible <= 20199)
@@ -34,11 +34,11 @@ namespace CalculatorProject.PlanDePensiones
             {
                 desgravacion = (model.AportacionPersonaFisicaPlanPensiones + model.AportacionEmpresaPlanPensiones) * 0.55f;
             }
-            else if (model.BaseImponible >= 300000 )
+            else if (model.BaseImponible >= 300000)
             {
                 desgravacion = (model.AportacionPersonaFisicaPlanPensiones + model.AportacionEmpresaPlanPensiones) * 0.53f;
             }
-            else
+            else if(model.BaseImponible<0)
             {
                 Console.WriteLine("Numero no válido");
             }
